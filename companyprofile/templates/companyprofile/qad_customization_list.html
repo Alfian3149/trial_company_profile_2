@@ -1,0 +1,225 @@
+{% extends "base/base.html" %}
+{%load static%}
+
+{% block title %} LUKUBARA {%endblock%}
+{%block header%}
+    {%include 'base/header.html'%}
+{%endblock%}    
+
+{%block extra_css%}
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{%static 'companyprofile/css/vendor/icofont.min.css'%}">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/swiper-bundle.min.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/animate.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/nice-select.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/venobox.min.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/aos.min.css'%}">
+{%endblock extra_css%}
+
+{%block main_css%}
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{%static 'companyprofile/css/style.css'%}">
+{%endblock%}  
+
+{%block extra_js%}
+
+{%endblock%}  
+{%block main_js%}
+    <!-- Main JS -->
+    <script src="{%static 'companyprofile/js/main.js'%}"></script>
+{%endblock%} 
+
+{%block content%}
+ <!-- Offcanvas Overlay -->
+ <div class="offcanvas-overlay"></div>
+
+ <!-- .....:::::: Start Breadcrumb Section :::::.... -->
+ <div class="breadcrumb-section">
+     <div class="breadcrumb-wrapper">
+         <div class="image"><img src="{%static 'companyprofile/images/background/projects2.png'%}" alt=""></div>
+         <div class="container">
+             <div class="row">
+                 <div class="col-12">
+                     <div class="content">
+                         <h2 class="title">Our Services</h2>
+                         <ol class="breadcrumb-link">
+                             <li><a href="project-list.html">Services</a></li>
+                             <li class="active" aria-current="page">All QAD qad_customization_list</li>
+                         </ol>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- .....:::::: End Breadcrumb Section :::::.... -->
+
+    <!-- .....:::::: Start Project Section :::::.... -->
+    <div class="project-section section-inner-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="projects-gallery-filter-nav">
+                    <button class="btn btn-outline-secondary active"  data-filter="*">All</button>
+                    <button class="btn btn-outline-secondary"  data-filter=".mining">Maintenance</button>
+                    <button class="btn btn-outline-secondary"  data-filter=".industrial">Report</button>
+                    <button class="btn btn-outline-secondary"  data-filter=".safety">Reporting Framework</button>
+                    <button class="btn btn-outline-secondary"   data-filter=".fuel">Event Trigger (TP/Hooks)</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="projects-wrapper mb-n5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item mining">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="{%static 'companyprofile/images/project/qad_maint1.png'%}" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Maint Program</h3>
+                                    <span class="catagory">Distribution</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="{%static 'companyprofile/images/icons/right-arrow.png'%}" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item industrial">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-2.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Fual Mining</h3>
+                                    <span class="catagory">factory / mining</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item safety">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-3.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Industrial Power</h3>
+                                    <span class="catagory">Power / industry</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item safety">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-4.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">General</h3>
+                                    <span class="catagory">factory / industry</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item mining">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-6.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Evaporation</h3>
+                                    <span class="catagory">factory / Steam</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item industrial">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-7.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Power Systems</h3>
+                                    <span class="catagory">factory / industry</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item safety">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-8.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Coal Mining</h3>
+                                    <span class="catagory">Mining / Coal</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item fuel">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-9.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Fuel</h3>
+                                    <span class="catagory">Mining / Fual</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 filtr-item mining">
+                            <!-- Start Project Display Single Item  -->
+                            <div class="default-slider-item project-display-single-item">
+                                <div class="image">
+                                    <img src="assets/images/project/project-display-5.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3 class="title">Inspection</h3>
+                                    <span class="catagory">Duty / Inspector</span>
+                                    <a href="project-details.html"><img class="img-fluid"
+                                            src="assets/images/icons/right-arrow.png" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- End Project Display Single Item  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- .....:::::: End Project Section :::::.... -->
+
+{%endblock content%}
+
+{%block footer%}
+    {%include 'base/footer.html'%}
+{%endblock%}    

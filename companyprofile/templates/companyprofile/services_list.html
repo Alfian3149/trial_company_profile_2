@@ -1,0 +1,148 @@
+{% extends "base/base.html" %}
+{%load static%}
+
+{% block title %} LUKUBARA {%endblock%}
+{%block header%}
+    {%include 'base/header.html'%}
+{%endblock%}    
+
+{%block extra_css%}
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{%static 'companyprofile/css/vendor/icofont.min.css'%}">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/swiper-bundle.min.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/animate.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/nice-select.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/venobox.min.css'%}">
+    <link rel="stylesheet" href="{%static 'companyprofile/css/plugins/aos.min.css'%}">
+{%endblock extra_css%}
+
+{%block main_css%}
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{%static 'companyprofile/css/style.css'%}">
+{%endblock%}  
+
+{%block extra_js%}
+
+{%endblock%}  
+{%block main_js%}
+    <!-- Main JS -->
+    <script src="{%static 'companyprofile/js/main.js'%}"></script>
+{%endblock%} 
+
+
+{%block content%}
+        <!-- Offcanvas Overlay -->
+        <div class="offcanvas-overlay"></div>
+
+        <!-- .....:::::: Start Breadcrumb Section :::::.... -->
+        <div class="breadcrumb-section">
+            <div class="breadcrumb-wrapper">
+                <div class="image"><img src="{%static 'companyprofile/images/background/projects2.png'%}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content">
+                                <h2 class="title">Our Services</h2>
+                                <ol class="breadcrumb-link">
+                                    <li><a href="service-list.html">Service</a></li>
+                                    <li class="active" aria-current="page">Services List</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        <!-- .....:::::: End Breadcrumb Section :::::.... -->
+
+        <!-- .....:::::: Start Service  Section :::::.... -->
+        <div class="service-section section-top-space">
+            <div class="container">
+                <div class="service-display-wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Start Service Single Item -->
+                            <div class="service-single-item">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{%static 'companyprofile/images/icons/customization.png'%}" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">QAD Menu/Module Customization</h4>
+                                    <a href="{%url 'qad_customization_list'%}" class="btn btn-sm btn-outline-primary text-uppercase">
+                                        <span>details <i class="icofont-double-right icon-space-left"></i></span> </a>
+                                </div>
+                            </div>
+                            <!-- End Service Single Item -->
+                            <!-- Start Service Single Item -->
+                            <div class="service-single-item">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{%static 'companyprofile/images/icons/warehouse.png'%}" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">QAD Warehouse Management System</h4>
+                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary text-uppercase">
+                                        <span>details <i class="icofont-double-right icon-space-left"></i></span> </a>
+                                </div>
+                            </div>
+                            <!-- End Service Single Item -->
+                            <!-- Start Service Single Item -->
+                            <div class="service-single-item">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{%static 'companyprofile/images/icons/integration.png'%}" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">QAD Integration to Web/Mobile</h4>
+                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary text-uppercase">
+                                        <span>details <i class="icofont-double-right icon-space-left"></i></span> </a>
+                                </div>
+                            </div>
+                            <!-- End Service Single Item -->
+                            <!-- Start Service Single Item -->
+                            <div class="service-single-item">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{%static 'companyprofile/images/icons/erpnext.png'%}" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">ERPNEXT Implementation</h4>
+                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary text-uppercase">
+                                        <span>details <i class="icofont-double-right icon-space-left"></i></span> </a>
+                                </div>
+                            </div>
+                            <!-- End Service Single Item -->
+                            <!-- Start Service Single Item -->
+                            <div class="service-single-item">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{%static 'companyprofile/images/icons/erpnext.png'%}" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">ERPNEXT Customization</h4>
+                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary text-uppercase">
+                                        <span>details <i class="icofont-double-right icon-space-left"></i></span> </a>
+                                </div>
+                            </div>
+                            <!-- End Service Single Item -->
+                            <!-- Start Service Single Item -->
+                            <div class="service-single-item">
+                                <div class="icon">
+                                    <img class="img-fluid" src="{%static 'companyprofile/images/icons/webdev.png'%}  " alt="">
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">Web Development</h4>
+                                    <a href="service-details.html" class="btn btn-sm btn-outline-primary text-uppercase">
+                                        <span>details <i class="icofont-double-right icon-space-left"></i></span> </a>
+                                </div>
+                            </div>
+                            <!-- End Service Single Item -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+{%endblock content%}
+
+{%block footer%}
+    {%include 'base/footer.html'%}
+{%endblock%}    
