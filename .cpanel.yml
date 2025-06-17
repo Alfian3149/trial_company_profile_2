@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/luku8469/public_html/lukubara.com
+    - export DEPLOYPATH=/home/luku8469/public_html/xxx.com
     - /bin/cp -R companyprofile $DEPLOYPATH
-    - /bin/cp -R lukubaracom $DEPLOYPATH
+    - /bin/cp -R xxxcom $DEPLOYPATH
     - /bin/cp -R static $DEPLOYPATH
     - /bin/cp manage.py $DEPLOYPATH
